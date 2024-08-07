@@ -13,6 +13,11 @@
 // 2. board games
 // 3. painting
 // Total hobbies: 3
+const groupMemberHobbies = ["swimming", "board games", "painting"];
+let totalHobbies = groupMemberHobbies.length;
+for (let i = 0; i < groupMemberHobbies.length; i++) {
+     console.log(`${i + 1}. ${groupMemberHobbies[i]}`
+          );
 
 /**
  * #2 Colors
@@ -24,6 +29,17 @@
  *    is in the array
  * 4. Output the array and number of times teal was found
  */
+const colors = ["red", "blue", "teal", "green", "teal",
+     "yellow", "teal", "purple", "teal", "orange"];
+     let tealCount = 0;
+     for (let i = 0; i < colors.length; i++) {
+          if (colors[i] === "teal") {
+               tealCount++;
+               }
+               }
+               console.log(colors);
+               console.log(`Teal was found ${tealCount} times`);
+
 
 
 // Example output
@@ -40,6 +56,22 @@
  *    array and even numbers in the evenNumbers array.
  * 4. Output the original array, odd number array and even number array
  */
+ const numbers = [1, 2, 3, 4, 5, 6
+     ];
+     let oddNumbers = [];
+     let evenNumbers = [];
+     for (let i = 0; i < numbers.length; i++) {
+          if (numbers[i] % 2 === 0) {
+               evenNumbers.push(numbers[i]);
+               }
+               else {
+                    oddNumbers.push(numbers[i]);
+                    }
+                    }
+                    console.log(numbers);
+                    console.log(oddNumbers);
+                    console.log(evenNumbers);
+
 
 
 // Example output
@@ -56,6 +88,14 @@
  * 3. Write a loop that adds the opposite value to the toggled array
  * 4. Output both arrays
  */
+ const switches = [true, false, true, false, true, false];
+ let toggled = [];
+ for (let i = 0; i < switches.length; i++) {
+     toggled.push(!switches[i]);
+     }
+     console.log(switches);
+     console.log(toggled);
+     
 
 
 // Example output
@@ -74,6 +114,16 @@
  *
  * Hint: Try using a while loop for this one.
  */
+     const numbers = [3, 0, 2, 8, 0, 0
+          ];
+          let index = numbers.length - 1;
+          while (numbers[index] === 0) {
+               numbers.pop();
+               index--;
+               }
+               console.log(numbers);
+
+
 
 
 // Example output
@@ -90,6 +140,23 @@
       and lowest numbers.
  * 3. Log the highest and lowest number to the console
  */
+
+      const numbers = [2, 2, -3, 7, 4,
+          1, 7, 12, 8];
+          let high = numbers[0];
+          let low = numbers[0];
+          for (let i = 1; i < numbers.length; i++) {
+               if (numbers[i] > high) {
+                    high = numbers[i];
+                    }
+                    if (numbers[i] < low) {
+                         low = numbers[i];
+                         }
+                         }
+                         console.log(`Highest: ${high}`
+                              );
+                              console.log(`Lowest: ${low}`);
+                              
 
 
 // Example output
